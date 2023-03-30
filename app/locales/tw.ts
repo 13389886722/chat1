@@ -4,13 +4,13 @@ import type { LocaleType } from "./index";
 const tw: LocaleType = {
   WIP: "該功能仍在開發中……",
   Error: {
-    Unauthorized: "目前您的狀態是未授權，請前往設定頁面填寫授權碼。",
+    Unauthorized: "目前您的狀態是未授權，請前往設定頁面填寫Token。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 條對話`,
   },
   Chat: {
-    SubTitle: (count: number) => `您已經與 ChatGPT 進行了 ${count} 條對話`,
+    SubTitle: (count: number) => `您已經與 robot 進行了 ${count} 條對話`,
     Actions: {
       ChatList: "查看消息列表",
       CompressedHistory: "查看壓縮後的歷史 Prompt",
@@ -95,9 +95,9 @@ const tw: LocaleType = {
       SubTitle: "當未壓縮的歷史訊息超過該值時，將進行壓縮",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可規避受控訪問限制",
-      Placeholder: "OpenAI API Key",
+      Title: "Token",
+      SubTitle: "使用 Token 可訪問",
+      Placeholder: "Token",
     },
     Usage: {
       Title: "帳戶餘額",
