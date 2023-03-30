@@ -11,7 +11,7 @@ const en: LocaleType = {
     ChatItemCount: (count: number) => `${count} messages`,
   },
   Chat: {
-    SubTitle: (count: number) => `${count} messages with ChatGPT`,
+    SubTitle: (count: number) => `${count} messages with robot`,
     Actions: {
       ChatList: "Go To Chat List",
       CompressedHistory: "Compressed History Memory Prompt",
@@ -97,9 +97,9 @@ const en: LocaleType = {
         "Will compress if uncompressed messages length exceeds the value",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "Use your key to ignore access code limit",
-      Placeholder: "OpenAI API Key",
+      Title: "Token",
+      SubTitle: "Using a token for access can be a possible translation",
+      Placeholder: "Token",
     },
     Usage: {
       Title: "Account Balance",
