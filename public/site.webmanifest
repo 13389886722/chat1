@@ -1,6 +1,6 @@
 {
-    "name": "ChatGPT Next Web",
-    "short_name": "ChatGPT",
+    "name": "全平台内容生成器",
+    "short_name": "内容生成器",
     "icons": [
       {
         "src": "/android-chrome-192x192.png",
