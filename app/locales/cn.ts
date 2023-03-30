@@ -3,13 +3,13 @@ import { SubmitKey } from "../store/app";
 const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
-    Unauthorized: "现在是未授权状态，请在设置页填写授权码。",
+    Unauthorized: "现在是未授权状态，请在设置页填写Token。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
   },
   Chat: {
-    SubTitle: (count: number) => `与 ChatGPT 的 ${count} 条对话`,
+    SubTitle: (count: number) => `与 内容生成器 的 ${count} 条对话`,
     Actions: {
       ChatList: "查看消息列表",
       CompressedHistory: "查看压缩后的历史 Prompt",
@@ -95,9 +95,9 @@ const cn = {
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过受控访问限制",
-      Placeholder: "OpenAI API Key",
+      Title: "Token",
+      SubTitle: "使用 Token 可访问",
+      Placeholder: "Token",
     },
     Usage: {
       Title: "账户余额",
