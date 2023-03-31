@@ -31,7 +31,7 @@ export enum Theme {
 }
 
 export interface ChatConfig {
-  historyMessageCount: number; // -1 means all
+  historyMessageCount: 1; // -1 means all
   compressMessageLengthThreshold: number;
   sendBotMessages: boolean; // send bot's message or not
   submitKey: SubmitKey;
@@ -132,7 +132,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   modelConfig: {
     model: "gpt-3.5-turbo",
     temperature: 1,
-    max_tokens: 2000,
+    max_tokens: 4096,
     presence_penalty: 0,
   },
 };
