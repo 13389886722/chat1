@@ -31,7 +31,7 @@ export enum Theme {
 }
 
 export interface ChatConfig {
-  historyMessageCount: 1; // -1 means all
+  historyMessageCount: number; // -1 means all
   compressMessageLengthThreshold: number;
   sendBotMessages: boolean; // send bot's message or not
   submitKey: SubmitKey;
