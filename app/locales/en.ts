@@ -96,7 +96,7 @@ const en: LocaleType = {
     Usage: {
       Title: "Account Balance",
       SubTitle(granted: any, used: any) {
-        return `Total {granted}*200000, Used $${used}*200000`;
+        return `Total ${granted}*200000, Used ${used}*200000`;
       },
       IsChecking: "Checking...",
       Check: "Check Again",
