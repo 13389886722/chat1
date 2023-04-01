@@ -65,14 +65,7 @@ const cn = {
       SubTitle: "聊天内容的字体大小",
     },
 
-    Update: {
-      Version: (x: string) => `当前版本：${x}`,
-      IsLatest: "已是最新版本",
-      CheckUpdate: "检查更新",
-      IsChecking: "正在检查更新...",
-      FoundUpdate: (x: string) => `发现新版本：${x}`,
-      GoToUpdate: "前往更新",
-    },
+    
     SendKey: "发送键",
     Theme: "主题",
     TightBorder: "紧凑边框",
@@ -102,7 +95,7 @@ const cn = {
     Usage: {
       Title: "账户余额",
       SubTitle(granted: any, used: any) {
-        return `总共 $${granted}，已使用 $${used}`;
+        return `总共 {granted}*200000，已使用 {used}*200000`;
       },
       IsChecking: "正在检查…",
       Check: "重新检查",
