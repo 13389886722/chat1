@@ -66,14 +66,6 @@ const en: LocaleType = {
       Title: "Font Size",
       SubTitle: "Adjust font size of chat content",
     },
-    Update: {
-      Version: (x: string) => `Version: ${x}`,
-      IsLatest: "Latest version",
-      CheckUpdate: "Check Update",
-      IsChecking: "Checking update...",
-      FoundUpdate: (x: string) => `Found new version: ${x}`,
-      GoToUpdate: "Update",
-    },
     SendKey: "Send Key",
     Theme: "Theme",
     TightBorder: "Tight Border",
@@ -104,7 +96,7 @@ const en: LocaleType = {
     Usage: {
       Title: "Account Balance",
       SubTitle(granted: any, used: any) {
-        return `Total $${granted}, Used $${used}`;
+        return `Total {granted}*200000, Used $${used}*200000`;
       },
       IsChecking: "Checking...",
       Check: "Check Again",
