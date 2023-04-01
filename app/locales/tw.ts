@@ -94,7 +94,7 @@ const tw: LocaleType = {
     Usage: {
       Title: "帳戶餘額",
       SubTitle(granted: any, used: any) {
-        return `總共 ${granted}*200000，已使用 ${used}*200000`;
+        return `總共 {${granted}*{20000}}，已使用 {${used}*{20000}}`;
       },
       IsChecking: "正在檢查…",
       Check: "重新檢查",
