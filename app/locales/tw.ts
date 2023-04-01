@@ -65,14 +65,6 @@ const tw: LocaleType = {
       Title: "字型大小",
       SubTitle: "聊天內容的字型大小",
     },
-    Update: {
-      Version: (x: string) => `當前版本：${x}`,
-      IsLatest: "已是最新版本",
-      CheckUpdate: "檢查更新",
-      IsChecking: "正在檢查更新...",
-      FoundUpdate: (x: string) => `發現新版本：${x}`,
-      GoToUpdate: "前往更新",
-    },
     SendKey: "發送鍵",
     Theme: "主題",
     TightBorder: "緊湊邊框",
@@ -102,7 +94,7 @@ const tw: LocaleType = {
     Usage: {
       Title: "帳戶餘額",
       SubTitle(granted: any, used: any) {
-        return `總共 $${granted}，已使用 $${used}`;
+        return `總共 {granted}*200000，已使用 $${used}*200000`;
       },
       IsChecking: "正在檢查…",
       Check: "重新檢查",
