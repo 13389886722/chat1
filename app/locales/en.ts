@@ -93,19 +93,6 @@ const en: LocaleType = {
       SubTitle: "Using a token for access can be a possible translation",
       Placeholder: "Token",
     },
-    Usage: {
-      Title: "Account Balance",
-      SubTitle(granted: any, used: any) {
-        return `Total {${granted}*{20000}}, Used {${used}*{20000}}`;
-      },
-      IsChecking: "Checking...",
-      Check: "Check Again",
-    },
-    AccessCode: {
-      Title: "Access Code",
-      SubTitle: "Access control enabled",
-      Placeholder: "Need Access Code",
-    },
     Model: "Model",
     Temperature: {
       Title: "Temperature",
