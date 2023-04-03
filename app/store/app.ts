@@ -121,8 +121,8 @@ const DEFAULT_CONFIG: ChatConfig = {
   historyMessageCount: 4,
   compressMessageLengthThreshold: 1000,
   sendBotMessages: true as boolean,
-  submitKey: SubmitKey.CtrlEnter as SubmitKey,
-  avatar: "1f603",
+  submitKey: SubmitKey.Enter as SubmitKey,
+  avatar: "1f383",
   fontSize: 14,
   theme: Theme.Auto as Theme,
   tightBorder: false,
@@ -132,7 +132,7 @@ const DEFAULT_CONFIG: ChatConfig = {
   modelConfig: {
     model: "gpt-3.5-turbo",
     temperature: 1,
-    max_tokens: 4096,
+    max_tokens: 4000,
     presence_penalty: 0,
   },
 };
