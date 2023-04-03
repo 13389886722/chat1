@@ -288,59 +288,19 @@ export function Settings(props: { closeSettings: () => void }) {
           </SettingItem>
         </List>
         <List>
-          {enabledAccessControl ? (
-            <SettingItem
-              title={Locale.Settings.AccessCode.Title}
-              subTitle={Locale.Settings.AccessCode.SubTitle}
-            >
-              <input
-                value={accessStore.accessCode}
-                type="text"
-                placeholder={Locale.Settings.AccessCode.Placeholder}
-                onChange={(e) => {
-                  accessStore.updateCode(e.currentTarget.value);
-                }}
-              ></input>
-            </SettingItem>
-          ) : (
-            <></>
-          )}
-
           <SettingItem
-            title={Locale.Settings.Token.Title}
-            subTitle={Locale.Settings.Token.SubTitle}
-          >
-            <input
-              value={accessStore.token}
-              type="text"
-              placeholder={Locale.Settings.Token.Placeholder}
-              onChange={(e) => {
-                accessStore.updateToken(e.currentTarget.value);
-              }}
-            ></input>
-          </SettingItem>
-
-          <SettingItem
-            title={Locale.Settings.Usage.Title}
-            subTitle={
-              loadingUsage
-                ? Locale.Settings.Usage.IsChecking
-                : Locale.Settings.Usage.SubTitle(
-                    usage?.granted ?? "[?]",
-                    usage?.used ?? "[?]",
-                  )
-            }
-          >
-            {loadingUsage ? (
-              <div />
-            ) : (
-              <IconButton
-                icon={<ResetIcon></ResetIcon>}
-                text={Locale.Settings.Usage.Check}
-                onClick={checkUsage}
-              />
-            )}
-          </SettingItem>
+  title={Locale.Settings.Token.Title}
+  subTitle={Locale.Settings.Token.SubTitle}
+>
+  <input
+    defaultValue={process.env.ACCESS_TOKEN || ''}
+    type="text"
+    placeholder={Locale.Settings.Token.Placeholder}
+    onChange={(e) => {
+      accessStore.updateToken(e.currentTarget.value);
+    }}
+  ></input>
+</SettingItem>
 
           <SettingItem
             title={Locale.Settings.HistoryCount.Title}
